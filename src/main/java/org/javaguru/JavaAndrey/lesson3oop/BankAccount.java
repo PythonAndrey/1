@@ -5,6 +5,10 @@ class BankAccount {
     private String owner;
     private int money;
 
+    public BankAccount(int money){
+        this.money = money;
+    }
+
     public BankAccount(String owner){
         this.owner = owner;
         this.money = 0;
@@ -14,6 +18,12 @@ class BankAccount {
         this.owner = owner;
         this.money = money;
     }
+    public String getOwner(){
+        return this.owner;
+    }
 
+    public void setMoney(int money){
+        this.money = money;
+    }
 }
 
