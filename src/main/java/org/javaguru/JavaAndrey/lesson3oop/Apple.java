@@ -13,5 +13,14 @@ class Apple {
         this.color =color;
         this.weight = weight;
     }
-
+    //Конструктор для получения значения свойств объекта Apple(Яблоко) после его создания.
+    public String getVariety(){
+        return this.variety;
+    }
+    public String getColor(){
+        return this.color;
+    }
+    public int getWeight(){
+        return this.weight;
+    }
 }
