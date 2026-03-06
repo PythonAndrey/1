@@ -13,6 +13,10 @@ public class AppleApp {
         String color = input.nextLine();
 
         System.out.println("Введите вес яблока: ");
-        String weight = input.nextLine();
+        int weight = input.nextInt();
+
+        Apple apple1 = new Apple(variety, color, weight);
+
+        System.out.printf("Сорт яблока: %s.%nЦвет яблока: %s.%nВес яблока: %d грамм.%n",apple1.getVariety(), apple1.getColor(), apple1.getWeight());
     }
 }
